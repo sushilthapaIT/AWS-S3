@@ -23,8 +23,8 @@ Homepage
 Login Page
 <img src="images/upload.png"   width="250" />
 Upload Page
-<img src="images/aws.png"      width="250" />
-AWS Page
+<!-- <img src="images/aws.png"      width="250" />
+AWS Page -->
 
 
 ## Setup
