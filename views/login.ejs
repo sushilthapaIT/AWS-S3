@@ -1,4 +1,3 @@
-<!-- login.ejs -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login - AWS S3 File Upload</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/css/styles.css"> <!-- Custom Styles -->
 </head>
-<body class="bg-light">
+<body class="bg-dark text-white"> <!-- Dark background with white text -->
   <div class="container d-flex justify-content-center align-items-center vh-100">
     <div class="card p-4 shadow-lg" style="width: 400px;">
       <h3 class="card-title text-center mb-4">Login</h3>
@@ -20,13 +19,13 @@
       <form method="POST" action="/login">
         <div class="mb-3">
           <label for="username" class="form-label">Username</label>
-          <input type="text" class="form-control" id="username" name="username" required>
+          <input type="text" class="form-control bg-dark text-white border-light" id="username" name="username" required>
         </div>
         <div class="mb-3">
           <label for="pin" class="form-label">PIN</label>
-          <input type="password" class="form-control" id="pin" name="pin" required>
+          <input type="password" class="form-control bg-dark text-white border-light" id="pin" name="pin" required>
         </div>
-        <button type="submit" class="btn btn-primary w-100">Login</button>
+        <button type="submit" class="btn btn-light w-100">Login</button> <!-- White button with dark text -->
       </form>
     </div>
   </div>
