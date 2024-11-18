@@ -23,7 +23,6 @@ function uploadFileToS3(fileBuffer, fileName, mimeType, bucketName) {
   return new Promise((resolve, reject) => {
     s3.upload(params, (err, data) => {
       if (err) {
-        //console.error("Error uploading file:", err);
         return reject(err); 
       }
       resolve(data); 

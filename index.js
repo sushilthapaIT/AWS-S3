@@ -1,3 +1,8 @@
+/*
+Sushil Thapa
+C0919991
+*/
+
 require('dotenv').config();
 
 const express = require('express');
@@ -6,6 +11,9 @@ const session = require('express-session');
 const multer = require('multer');
 const AWS = require('aws-sdk');
 const app = express();
+
+// Serve static files from the "CSS" folder
+app.use('/css', express.static(path.join(__dirname, 'CSS')));
 
 // Setup view engine and static files
 app.set('views', path.join(__dirname, 'views'));
