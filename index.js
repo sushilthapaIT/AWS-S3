@@ -34,8 +34,8 @@ const s3 = new AWS.S3({
 });
 
 // User credentials 
-const validUsername = "admin";
-const validPin = "1234";
+const validUsername = "user";
+const validPin = "7777";
 
 // Multer setup for file upload with validations
 const allowedFileTypes = /jpg|jpeg|png|gif|pdf/;  
