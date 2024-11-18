@@ -3,8 +3,10 @@
 # CSD-4553-02
 The code base of the course CSD-4553-02-Cloud Computing.
 
-# E-Commerce Flask Application
-This is a simple CRUD application for user management using Node.js with Express, Mongoose and MongoDB.
+# AWS S3 File Upload System
+This is a simple secure web application using NodeJS that allows users to upload files to an AWS
+S3 bucket. This application have a feature like professional user interface, authentication,
+and proper AWS integration.
 
 ## Features
 
