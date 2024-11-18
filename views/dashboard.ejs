@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dashboard</title>
+</head>
+<body>
+    <h1>Welcome</h1>
+    <form id="uploadForm">
+        <input type="file" name="file" id="fileInput" required />
+        <button type="submit">Upload</button>
+    </form>
+    <div id="uploadStatus"></div>
+    <a href="/logout">Logout</a>
+</body>
+<script>
+    document.getElementById('uploadForm').addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const formData = new FormData();
+        formData.append('file', document.getElementById('fileInput').files[0]);
+
+        const response = await fetch('/upload', {
+            method: 'POST',
+            body: formData,
+        });
+        const result = await response.json();
+        document.getElementById('uploadStatus').innerText = result.success
+            ? `File uploaded: ${result.url}`
+            : `Error: ${result.error}`;
+    });
+</script>
+</html>
