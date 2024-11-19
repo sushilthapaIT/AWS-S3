@@ -17,13 +17,13 @@ and proper AWS integration.
 - Responsive
 
 ## Application Preview
-<img src="images/homepage.png" width="250" />
+<img src="images/homepage.png" width="250">
 Homepage
-<img src="images/login.png"    width="250" />
+<img src="images/login.png" width="250">
 Login Page
-<img src="images/upload.png"   width="250" />
+<img src="images/upload.png" width="250">
 Upload Page
-<!-- <img src="images/aws.png"      width="250" />
+<img src="images/homepage.png" width="250">
 AWS Page -->
 
 
